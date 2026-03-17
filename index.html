@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>税理士法人植松会計事務所 | 仙台の税務・会計・相続のプロフェッショナル</title>
-    <meta name="description" content="仙台市宮城野区の税理士法人植松会計事務所。法人税務、個人確定申告、相続税対策まで幅広く対応。信頼と実績で企業と個人の税務をサポートいたします。">
-    <link rel="stylesheet" href="style.css">
+    <title>税理士法人植松会計事務所 | 仙台の税務・会計のプロフェッショナル</title>
+    <meta name="description" content="仙台市宮城野区の税理士法人植松会計事務所。法人税務、個人確定申告、相続税対策まで幅広くサポート。経験豊富な税理士がお客様の課題を解決します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
@@ -18,17 +20,17 @@
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="#services">サービス</a></li>
-                        <li><a href="#strengths">選ばれる理由</a></li>
-                        <li><a href="#about">事務所概要</a></li>
-                        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+                        <li><a href="#services" class="nav-link">サービス</a></li>
+                        <li><a href="#about" class="nav-link">選ばれる理由</a></li>
+                        <li><a href="#office" class="nav-link">事務所概要</a></li>
+                        <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
                     </ul>
                 </nav>
-                <div class="mobile-menu-toggle">
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -40,114 +42,128 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">
-                    <span class="hero-subtitle">仙台で信頼される</span>
-                    税務・会計のプロフェッショナル
-                </h2>
-                <p class="hero-description">
-                    法人税務から個人確定申告、相続税対策まで<br>
-                    お客様の財務を全面サポートいたします
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">無料相談のお申し込み</a>
-                    <a href="tel:022-297-2771" class="btn btn-secondary">
-                        <span class="phone-icon">📞</span>
-                        022-297-2771
-                    </a>
+                <h2 class="hero-title">仙台の税務・会計の<br>プロフェッショナル</h2>
+                <p class="hero-subtitle">お客様の事業成長と資産保全を<br>経験豊富な税理士がトータルサポート</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">無料相談はこちら</a>
+                    <a href="tel:022-297-2771" class="btn btn-outline">022-297-2771</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">サービス案内</h2>
-                <p class="section-subtitle">幅広い税務・会計サービスでお客様をサポート</p>
+                <h2 class="section-title">サービス内容</h2>
+                <p class="section-subtitle">お客様のニーズに応じた幅広いサービスを提供します</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>法人税務</h3>
-                    <p>法人税申告、月次決算、年次決算まで企業の税務を総合的にサポート。節税対策もご提案いたします。</p>
+                    <div class="service-icon">
+                        <div class="icon-placeholder">🏢</div>
+                    </div>
+                    <h3 class="service-title">法人税務</h3>
+                    <p class="service-description">法人税申告、消費税申告、年末調整など、法人に関する税務業務を包括的にサポートします。</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">👤</div>
-                    <h3>個人確定申告</h3>
-                    <p>個人事業主様の確定申告から副業の申告まで、分かりやすくサポートいたします。</p>
+                    <div class="service-icon">
+                        <div class="icon-placeholder">👤</div>
+                    </div>
+                    <h3 class="service-title">個人確定申告</h3>
+                    <p class="service-description">個人事業主の確定申告から医療費控除まで、個人の税務相談に幅広く対応いたします。</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>相続税対策</h3>
-                    <p>相続税の申告・対策、事業承継まで専門知識でお手伝いいたします。</p>
+                    <div class="service-icon">
+                        <div class="icon-placeholder">💰</div>
+                    </div>
+                    <h3 class="service-title">相続税対策</h3>
+                    <p class="service-description">相続税申告、遺産分割協議書作成、生前贈与など、相続に関するトータルサポートを提供します。</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>経営コンサルティング</h3>
-                    <p>財務分析から事業計画まで、経営の意思決定をサポートいたします。</p>
+                    <div class="service-icon">
+                        <div class="icon-placeholder">📊</div>
+                    </div>
+                    <h3 class="service-title">会計・記帳代行</h3>
+                    <p class="service-description">日々の記帳業務から財務諸表作成まで、会計業務を効率化し、経営に集中できる環境を提供します。</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Strengths Section -->
-    <section id="strengths" class="strengths">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">選ばれる理由</h2>
-                <p class="section-subtitle">なぜ多くのお客様に選ばれ続けているのか</p>
-            </div>
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <div class="strength-number">01</div>
-                    <h3>豊富な実績と経験</h3>
-                    <p>仙台で長年にわたり培った豊富な実績と経験で、お客様の多様なニーズにお応えします。業種を問わず幅広い対応が可能です。</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-placeholder">📈</div>
+                    </div>
+                    <h3 class="service-title">経営コンサルティング</h3>
+                    <p class="service-description">事業計画策定、資金調達支援、経営改善提案など、企業の成長をサポートします。</p>
                 </div>
-                <div class="strength-card">
-                    <div class="strength-number">02</div>
-                    <h3>迅速で丁寧な対応</h3>
-                    <p>お客様からのご相談には迅速に対応し、分かりやすい説明を心がけています。複雑な税務も安心してお任せください。</p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-number">03</div>
-                    <h3>最適な節税提案</h3>
-                    <p>法改正や税制の変更にも迅速に対応し、お客様にとって最適な節税対策をご提案いたします。</p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-placeholder">🏪</div>
+                    </div>
+                    <h3 class="service-title">起業・開業支援</h3>
+                    <p class="service-description">会社設立手続き、創業融資支援、開業届提出など、スタートアップを全面的にバックアップします。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-info">
-                    <h2 class="section-title">事務所概要</h2>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <div class="detail-label">事務所名</div>
-                            <div class="detail-value">税理士法人植松会計事務所</div>
+            <div class="section-header">
+                <h2 class="section-title">選ばれる理由</h2>
+                <p class="section-subtitle">なぜ多くのお客様に信頼されているのか</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-number">01</div>
+                    <h3 class="about-title">豊富な経験と実績</h3>
+                    <p class="about-description">数多くの企業・個人のお客様をサポートしてきた豊富な経験により、様々なケースに対応可能です。複雑な税務問題も安心してお任せください。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">02</div>
+                    <h3 class="about-title">迅速・丁寧な対応</h3>
+                    <p class="about-description">お客様からのご相談には迅速にお応えし、分かりやすい説明を心がけています。税務の専門用語も丁寧に解説いたします。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">03</div>
+                    <h3 class="about-title">地域密着のサービス</h3>
+                    <p class="about-description">仙台を中心とした地域の事情に精通し、地元企業の発展に貢献します。お客様との長期的な関係を大切にしています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Section -->
+    <section class="office" id="office">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">事務所概要</h2>
+            </div>
+            <div class="office-content">
+                <div class="office-info">
+                    <h3>税理士法人植松会計事務所</h3>
+                    <div class="office-details">
+                        <div class="office-item">
+                            <strong>所在地</strong>
+                            <p>〒983-0868<br>仙台市宮城野区鉄砲町中5-6</p>
                         </div>
-                        <div class="detail-item">
-                            <div class="detail-label">所在地</div>
-                            <div class="detail-value">〒983-0868<br>仙台市宮城野区鉄砲町中5-6</div>
+                        <div class="office-item">
+                            <strong>電話番号</strong>
+                            <p><a href="tel:022-297-2771">022-297-2771</a></p>
                         </div>
-                        <div class="detail-item">
-                            <div class="detail-label">電話番号</div>
-                            <div class="detail-value">
-                                <a href="tel:022-297-2771">022-297-2771</a>
-                            </div>
+                        <div class="office-item">
+                            <strong>営業時間</strong>
+                            <p>平日 9:00〜17:00<br>（土日祝日は予約制）</p>
                         </div>
-                        <div class="detail-item">
-                            <div class="detail-label">営業時間</div>
-                            <div class="detail-value">平日 9:00-18:00<br>土日祝日 要相談</div>
+                        <div class="office-item">
+                            <strong>アクセス</strong>
+                            <p>JR仙石線「榴ヶ岡駅」徒歩8分<br>駐車場完備</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-map">
+                <div class="office-map">
                     <div class="map-placeholder">
-                        <p>📍 Google Map<br>仙台市宮城野区鉄砲町中5-6</p>
+                        <p>Google Map</p>
                     </div>
                 </div>
             </div>
@@ -155,65 +171,69 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">お問い合わせ</h2>
-                <p class="section-subtitle">まずはお気軽にご相談ください</p>
+                <p class="section-subtitle">税務・会計に関するご相談はお気軽にお問い合わせください</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>お電話でのお問い合わせ</h3>
-                    <div class="contact-phone">
-                        <a href="tel:022-297-2771" class="phone-link">
-                            📞 022-297-2771
+                    <h3>まずはお気軽にご相談ください</h3>
+                    <p>初回相談は無料です。お客様の状況をお聞きし、最適なソリューションをご提案いたします。</p>
+                    <div class="contact-methods">
+                        <a href="tel:022-297-2771" class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-info">
+                                <strong>お電話でのお問い合わせ</strong>
+                                <p>022-297-2771</p>
+                            </div>
                         </a>
-                        <p>平日 9:00-18:00 / 土日祝日 要相談</p>
-                    </div>
-                    <div class="contact-benefits">
-                        <h4>初回相談無料</h4>
-                        <ul>
-                            <li>✓ 税務に関するご相談</li>
-                            <li>✓ 節税対策のご提案</li>
-                            <li>✓ 相続税のお悩み</li>
-                            <li>✓ 確定申告のご相談</li>
-                        </ul>
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <strong>メールでのお問い合わせ</strong>
+                                <p>右のフォームよりお送りください</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form class="form">
-                        <div class="form-group">
-                            <label for="name">お名前 *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">電話番号</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">ご相談内容 *</label>
-                            <select id="service" name="service" required>
-                                <option value="">選択してください</option>
-                                <option value="法人税務">法人税務</option>
-                                <option value="個人確定申告">個人確定申告</option>
-                                <option value="相続税対策">相続税対策</option>
-                                <option value="経営コンサルティング">経営コンサルティング</option>
-                                <option value="その他">その他</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">お問い合わせ内容 *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="btn btn-primary">送信する</button>
-                        </div>
-                    </form>
-                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">会社名・屋号</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">お問い合わせ内容 <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">選択してください</option>
+                            <option value="法人税務">法人税務について</option>
+                            <option value="個人確定申告">個人確定申告について</option>
+                            <option value="相続税対策">相続税対策について</option>
+                            <option value="会計・記帳代行">会計・記帳代行について</option>
+                            <option value="経営コンサルティング">経営コンサルティングについて</option>
+                            <option value="起業・開業支援">起業・開業支援について</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">詳細・ご質問 <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required placeholder="ご相談内容を詳しくお聞かせください"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">送信する</button>
+                </form>
             </div>
         </div>
     </section>
@@ -224,17 +244,15 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <h3>税理士法人植松会計事務所</h3>
-                    <p>〒983-0868 仙台市宮城野区鉄砲町中5-6</p>
-                    <p>TEL: 022-297-2771</p>
+                    <p>〒983-0868 仙台市宮城野区鉄砲町中5-6<br>
+                    TEL: 022-297-2771</p>
                 </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="#services">サービス</a></li>
-                        <li><a href="#strengths">選ばれる理由</a></li>
-                        <li><a href="#about">事務所概要</a></li>
-                        <li><a href="#contact">お問い合わせ</a></li>
-                    </ul>
-                </div>
+                <nav class="footer-nav">
+                    <a href="#services">サービス</a>
+                    <a href="#about">選ばれる理由</a>
+                    <a href="#office">事務所概要</a>
+                    <a href="#contact">お問い合わせ</a>
+                </nav>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 税理士法人植松会計事務所. All rights reserved.</p>
@@ -244,11 +262,15 @@
 
     <script>
         // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav').classList.toggle('nav-open');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.querySelector('.nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+            mobileMenuBtn.classList.toggle('active');
         });
 
-        // Smooth scroll for anchor links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -259,12 +281,15 @@
                         block: 'start'
                     });
                 }
+                // Close mobile menu if open
+                nav.classList.remove('nav-open');
+                mobileMenuBtn.classList.remove('active');
             });
         });
 
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
             if (window.scrollY > 100) {
                 header.classList.add('header-scrolled');
             } else {
